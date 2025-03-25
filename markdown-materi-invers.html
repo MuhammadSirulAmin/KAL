@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Invers Matriks</title>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h2, h3, h4 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Materi Pertama</h2>
+        <h3>Menghitung Invers Matriks</h3>
+
+        <h4>Langkah 1: Tuliskan dalam Bentuk Matriks Augmented</h4>
+        <p>Kita memiliki sistem persamaan tiga variabel sebagai berikut:</p>
+        <p>
+        $$
+        \begin{cases}
+        2x - y + 3z = 2 \\
+        x + 2y - 2z = 1 \\
+        3x + z = 3
+        \end{cases}
+        $$
+        </p>
+
+        <p>Persamaan ini dapat ditulis dalam bentuk matriks augmented:</p>
+        <p>
+        $$
+        \left[ \begin{array}{ccc|c}
+        2 & -1 & 3 & 2 \\
+        1 & 2 & -2 & 1 \\
+        3 & 0 & 1 & 3
+        \end{array} \right]
+        $$
+        </p>
+
+        <h4>Langkah 2: Lakukan Operasi Baris Elementer</h4>
+        <p>Kita melakukan operasi baris elementer untuk mengubah bagian kiri menjadi matriks identitas.</p>
+        
+        <h4>Langkah 3: Hasil Akhir</h4>
+        <p>Jika bagian kiri telah menjadi matriks identitas, maka bagian kanan akan menjadi invers dari matriks awal. Dengan demikian, hasil perkalian invers matriks dengan vektor \( b \) akan menghasilkan:</p>
+        <p>
+        $$
+        \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}
+        $$
+        </p>
+        <p>Ini menunjukkan bahwa sistem persamaan telah disusun dengan benar.</p>
+    </div>
+</body>
+</html>
